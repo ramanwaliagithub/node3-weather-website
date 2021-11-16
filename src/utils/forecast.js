@@ -18,7 +18,7 @@ const forecast = (lat, long, callback) => {
                 longitude: body.location.lon,
                 temperature: body.current.temperature,
                 feelslike: body.current.feelslike,
-                current: body.current.weather_descriptions[0] + ' throughout the day. Temperature is ' + body.current.temperature + ' and feels like ' + body.current.feelslike + ' and ' + body.current.precip + '% chance of rain.'
+                current: body.current.weather_descriptions[0] + ' throughout the day. Temperature is ' + body.current.temperature + ' and feels like ' + body.current.feelslike + ' and ' + body.current.precip + '% chance of rain.' + 'The humidity is ' + body.current.huidity + '%.'
             })
         }
     })
